@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="250dp">
+
+
+    <ImageView
+        android:id="@+id/eventimage"
+        android:layout_width="150dp"
+        android:layout_height="135dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="10dp"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/eventname"
+        android:layout_width="189dp"
+        android:layout_height="94dp"
+        android:layout_alignEnd="@+id/eventimage"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="19dp"
+        android:layout_marginEnd="-238dp"
+        android:gravity="center"
+        android:text="TextView"
+        android:textColor="@color/black"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/eventspeials"
+        android:layout_width="200dp"
+        android:layout_height="101dp"
+        android:layout_alignEnd="@+id/eventimage"
+        android:layout_alignBottom="@+id/eventname"
+        android:layout_marginEnd="-236dp"
+        android:layout_marginBottom="-136dp"
+        android:gravity="right"
+        android:text="TextView"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/blah"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/eventspeials"
+        android:layout_alignBottom="@+id/eventspeials"
+        android:layout_marginEnd="22dp"
+        android:layout_marginBottom="-39dp"
+        tools:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/eventlocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:visibility="invisible" />
+
+</RelativeLayout>
